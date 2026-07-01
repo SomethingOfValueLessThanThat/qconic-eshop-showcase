@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Settings } from 'lucide-react'
 import CartButton from './CartButton'
 
 export default function Header() {
@@ -33,13 +32,6 @@ export default function Header() {
               className="hidden h-9 items-center rounded-md px-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground md:inline-flex"
             >
               Kontakt
-            </Link>
-            <Link
-              href="/nastaveni"
-              aria-label="Nastavení"
-              className="grid h-9 w-9 place-items-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-            >
-              <Settings className="h-[18px] w-[18px]" strokeWidth={2} />
             </Link>
             <CartButton />
           </div>
